@@ -2,26 +2,23 @@ const btn = document.querySelector('button')
 
 const main = document.querySelector('main')
 
-
-
 btn.addEventListener('click', function(){
-
 
   for(i=1; i<=100; i++){
     if(i%3 == 0 && i%5 == 0){
     let box = document.createElement('div')
     main.append(box)
-    box.classList.add('box')
+    box.classList.add('box', 'fizzbuzz-box')
     box.append('fizzbuzz')
   }else if(i%3 == 0){
     let box = document.createElement('div')
     main.append(box)
-    box.classList.add('box')
+    box.classList.add('box', 'fizz-box')
     box.append('fizz')
   }else if(i%5 == 0){
     let box = document.createElement('div')
     main.append(box)
-    box.classList.add('box')
+    box.classList.add('box', 'buzz-box')
     box.append('buzz')
   }else{
     let box = document.createElement('div')
@@ -30,7 +27,6 @@ btn.addEventListener('click', function(){
     box.append(i)
   }
   }
-
 
 })
 

@@ -4,32 +4,72 @@
   box-sizing: border-box;
 }
 body {
+  font-family: 'Titillium Web', sans-serif;
   height: 100vh;
   width: 100%;
-  background-color: dodgerblue;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  background-color: #3b5998;
+  text-align: center;
 }
 main {
-  height: 70%;
+  height: 50%;
   width: 70%;
   margin: 0 auto;
-  background-color: aquamarine;
+  background-color:#8b9dc3;
   overflow: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content:flex-start;
   padding: 10px;
+  box-shadow: 0 0 10px white;
+  border-radius: 10px;
 }
 .box {
-  width: 80px;
-  height: 80px;
-  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  /* border: 2px solid #3b5998;; */
   margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  background-color: 	#dfe3ee;
+  color: #3b5998;
+}
+main + div {
+  padding-top: 60px;
 }
 button {
-  width: 50px;
+  padding: 10px 30px;
+  font-size: 40px;
+  cursor: pointer;
+  color: #3b5998;
+  transition: .5s;
+  border-radius: 15px;
+  border: none;
+}
+button:hover {
+  box-shadow: 0 0 20px white;
+}
+.logo {
+  font-size: 80px;
+  padding: 40px 0;
+  font-weight: 800;
+  color: #dfe3ee;
+  text-shadow: 5px 5px 10px black;
+}
+
+
+.fizz-box {
+  color: red;
+  box-shadow: 0 0 10px red;
+}
+.buzz-box {
+  color: green;
+  box-shadow: 0 0 10px green;
+}
+.fizzbuzz-box {
+  color: yellow;
+  box-shadow: 0 0 10px yellow;
 }
